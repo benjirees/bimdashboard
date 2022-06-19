@@ -1,0 +1,55 @@
+.chart {
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 15px -5px #000000; 
+    box-shadow: 5px 5px 15px -5px #000000;
+}
+
+.chartTitle {
+    margin-bottom: 20px;
+}
+
+.inline-block-child {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.inline-block-child button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #fad6a5;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+}
+
+.inline-block-child button:hover {
+    background-color: orange;
+}
+
+.inline-block-child button:active {
+    background-color: orange;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.inline-block-childafter button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: lightblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+}
