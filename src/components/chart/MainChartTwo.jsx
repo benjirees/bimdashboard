@@ -8,7 +8,7 @@ export default function MainChartTwo({title, data, dataKey, grid}) {
     return (
         <div className="chart">
             <h2>After AI</h2> 
-            <ResponsiveContainer width="100%" aspect={4 / 1}>
+            <ResponsiveContainer width="50%" aspect={2 / 1}>
                 <LineChart data={data}>
                     <XAxis dataKey="name" stroke="gray"/>
                     <Line type="monotone" dataKey={dataKey} stroke="gray"/>
