@@ -1,5 +1,6 @@
 import React from 'react'
 import "./sidebar.css"
+import { Link } from "react-router-dom";
 
 import { IconContext } from 'react-icons'
 import { MdLineStyle } from "react-icons/md"
@@ -30,18 +31,22 @@ export default function Sidebar() {
                             </IconContext.Provider>
                             Home
                         </li>
-                        <li className="sidebarListItem">
-                            <IconContext.Provider value={{size: 30}}>
-                                <FiArrowLeftCircle className="sidebarIcon" /> 
-                            </IconContext.Provider>
-                            Before AI
-                        </li>
-                        <li className="sidebarListItem">
-                            <IconContext.Provider value={{size: 30}}>
-                                <FiArrowRightCircle className="sidebarIcon" />
-                            </IconContext.Provider>
-                            After AI
-                        </li>
+                        <Link to="/beforeai">
+                            <li className="sidebarListItem">
+                                <IconContext.Provider value={{size: 30}}>
+                                    <FiArrowLeftCircle className="sidebarIcon" /> 
+                                </IconContext.Provider>
+                                Before AI
+                            </li>
+                        </Link>
+                        <Link to="/afterai">
+                            <li className="sidebarListItem">
+                                <IconContext.Provider value={{size: 30}}>
+                                    <FiArrowRightCircle className="sidebarIcon" />
+                                </IconContext.Provider>
+                                After AI
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
