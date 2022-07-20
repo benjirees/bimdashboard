@@ -25,12 +25,14 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <IconContext.Provider value={{size: 30}}>
-                                <MdLineStyle className="sidebarIcon" />
-                            </IconContext.Provider>
-                            Home
-                        </li>
+                        <Link to="/">
+                            <li className="sidebarListItem active">
+                                <IconContext.Provider value={{size: 30}}>
+                                    <MdLineStyle className="sidebarIcon" />
+                                </IconContext.Provider>
+                                Home
+                            </li>
+                        </Link>
                         <Link to="/beforeai">
                             <li className="sidebarListItem">
                                 <IconContext.Provider value={{size: 30}}>
