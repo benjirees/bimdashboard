@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "58f982ebf974095f68b6",
+    "revision": "33442c628d4b425f474f",
     "url": "/bimdashboard/static/css/main.2c8da418.chunk.css"
   },
   {
-    "revision": "58f982ebf974095f68b6",
-    "url": "/bimdashboard/static/js/main.58f982eb.chunk.js"
+    "revision": "33442c628d4b425f474f",
+    "url": "/bimdashboard/static/js/main.33442c62.chunk.js"
   },
   {
     "revision": "6ef2a44bca83fb0f595e",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/bimdashboard/static/media/allplan-logo.1f64ac27.svg"
   },
   {
-    "revision": "7332d9f2636415058d576ecd215866de",
+    "revision": "1b64ddc5539fa48f963e61b3028227c5",
     "url": "/bimdashboard/index.html"
   }
 ];
