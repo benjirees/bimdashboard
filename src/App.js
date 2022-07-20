@@ -18,6 +18,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/bimdashboard">
+            <Home />
+          </Route>
           <Route path="/beforeai">
             <BeforeAi />
           </Route>

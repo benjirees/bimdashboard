@@ -25,7 +25,7 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <Link to="/">
+                        <Link to="/bimdashboard">
                             <li className="sidebarListItem active">
                                 <IconContext.Provider value={{size: 30}}>
                                     <MdLineStyle className="sidebarIcon" />
