@@ -7,13 +7,19 @@ import "./app.css"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BeforeAi from './pages/home/beforeAi/BeforeAi';
 import AfterAi from './pages/home/afterAi/AfterAi';
+import Collapsible from 'react-collapsible';
+import { BsChevronDown } from "react-icons/bs";
 
 function App() {
   return (
     <Router>
       <Topbar />
       <div className="container">
-        <Sidebar />
+
+        <Collapsible trigger={["Sidebar", <BsChevronDown />]}>
+          <Sidebar /> {/* Want to make this component collapsible */}
+        </Collapsible>
+
         <Switch>
           <Route exact path="/">
             <Home />
