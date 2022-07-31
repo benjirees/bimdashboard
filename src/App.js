@@ -26,7 +26,7 @@ function App() {
           edge='false' 
           color='inherit' 
           aria-label='logo' 
-           
+          disableRipple='true'
           onClick={() => setIsDrawerOpen(true)}> {/* Maybe add "disableRipple='true'"? */}
 
           <IconContext.Provider value={{size: 45}}>
