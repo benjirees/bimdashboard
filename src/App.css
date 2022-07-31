@@ -5,3 +5,8 @@
 .outline {
     color: rgb(187, 186, 186);
 }
+
+.sideButton {
+    position: relative;
+    left: 10px;
+}

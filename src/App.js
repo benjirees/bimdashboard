@@ -13,6 +13,7 @@ import { IconContext } from 'react-icons'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { Drawer, Box, Typography, IconButton } from '@mui/material'
 import { useState } from 'react'
+import SidebarButton from './components/sidebarButton/SidebarButton';
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -21,13 +22,14 @@ function App() {
       <Topbar />
       <div className="container">
 
+        {/*
         <IconButton 
           size='large' 
           edge='false' 
           color='inherit' 
           aria-label='logo' 
-          disableRipple='true'
-          onClick={() => setIsDrawerOpen(true)}> {/* Maybe add "disableRipple='true'"? */}
+          
+          onClick={() => setIsDrawerOpen(true)}> 
 
           <IconContext.Provider value={{size: 45}}>
             <AiOutlineMenu className='outline'/>
@@ -39,6 +41,10 @@ function App() {
             <Sidebar />
           </Box>
         </Drawer>
+        */}
+        <div className="sideButton">
+          <SidebarButton />
+        </div>
 
         <Switch>
           <Route exact path="/">
