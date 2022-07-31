@@ -9,16 +9,36 @@ import BeforeAi from './pages/home/beforeAi/BeforeAi';
 import AfterAi from './pages/home/afterAi/AfterAi';
 import Collapsible from 'react-collapsible';
 import { BsChevronDown } from "react-icons/bs";
+import { IconContext } from 'react-icons'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { Drawer, Box, Typography, IconButton } from '@mui/material'
+import { useState } from 'react'
 
 function App() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   return (
     <Router>
       <Topbar />
       <div className="container">
 
-        <Collapsible trigger={["Sidebar", <BsChevronDown />]}>
-          <Sidebar /> {/* Want to make this component collapsible */}
-        </Collapsible>
+        <IconButton 
+          size='large' 
+          edge='false' 
+          color='inherit' 
+          aria-label='logo' 
+           
+          onClick={() => setIsDrawerOpen(true)}> {/* Maybe add "disableRipple='true'"? */}
+
+          <IconContext.Provider value={{size: 45}}>
+            <AiOutlineMenu className='outline'/>
+          </IconContext.Provider>
+        </IconButton>
+        <Drawer anchor='left' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+          <Box p={2} width='250px' textAlign='center' role='presentation'>
+
+            <Sidebar />
+          </Box>
+        </Drawer>
 
         <Switch>
           <Route exact path="/">
