@@ -10,7 +10,7 @@ function SidebarButton() {
     return (
         <>
         <IconButton size='large' edge='false' color='inherit' aria-label='logo' onClick={() => setIsDrawerOpen(true)}>
-            <IconContext.Provider value={{size: 45}}>
+            <IconContext.Provider value={{size: 30}}>
                 <AiOutlineMenu className='outline'/>
             </IconContext.Provider>
         </IconButton>
