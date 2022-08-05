@@ -3,12 +3,6 @@ import "./topbar.css"
 import { ReactComponent as AllPlanLogo } from "./img/allplan-logo.svg"
 import {NotificationsNone, Settings, Search} from '@material-ui/icons';
 
-import { IconContext } from 'react-icons'
-import { MdNotificationsNone } from "react-icons/md"
-import { FaSearch } from "react-icons/fa"
-import { FiSettings } from "react-icons/fi"
-
-
 export default function Topbar() {
     return (
         <div className="topbar">

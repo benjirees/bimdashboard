@@ -7,12 +7,12 @@ import "./app.css"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BeforeAi from './pages/home/beforeAi/BeforeAi';
 import AfterAi from './pages/home/afterAi/AfterAi';
-import Collapsible from 'react-collapsible';
-import { BsChevronDown } from "react-icons/bs";
-import { IconContext } from 'react-icons'
-import { AiOutlineMenu } from 'react-icons/ai'
-import { Drawer, Box, Typography, IconButton } from '@mui/material'
-import { useState } from 'react'
+// import Collapsible from 'react-collapsible';
+// import { BsChevronDown } from "react-icons/bs";
+// import { IconContext } from 'react-icons'
+// import { AiOutlineMenu } from 'react-icons/ai'
+// import { Drawer, Box, Typography, IconButton } from '@mui/material'
+// import { useState } from 'react'
 import SidebarButton from './components/sidebarButton/SidebarButton';
 
 function App() {
@@ -56,7 +56,13 @@ function App() {
           <Route path="/beforeai">
             <BeforeAi />
           </Route>
+          <Route path="/bimdashboard/beforeai">
+            <BeforeAi />
+          </Route>
           <Route path="/afterai">
+            <AfterAi />
+          </Route>
+          <Route path="/bimdashboard/afterai">
             <AfterAi />
           </Route>
         </Switch>
