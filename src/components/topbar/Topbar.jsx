@@ -1,6 +1,7 @@
 import React from 'react'
 import "./topbar.css"
 import { ReactComponent as AllPlanLogo } from "./img/allplan-logo.svg"
+import { Link } from "react-router-dom";
 import {NotificationsNone, Settings, Search} from '@material-ui/icons';
 import SettingsButton from '../settingsButton/SettingsButton';
 
@@ -10,7 +11,9 @@ export default function Topbar() {
             <div className="topbarWrapper">
                 <div className="topLeft">
                     <div className="logo">
-                        <AllPlanLogo />
+                        <Link to="/bimdashboard">
+                            <AllPlanLogo />
+                        </Link>
                     </div>
                 </div>
 
