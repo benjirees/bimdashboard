@@ -3,16 +3,18 @@ import './settings.css'
 import ToggleButton from '@mui/material/ToggleButton'
 import { MdDarkMode } from 'react-icons/md'
 import { BsFillBrightnessHighFill } from 'react-icons/bs'
+import { BsFillVolumeMuteFill } from 'react-icons/bs'
 
 function Settings() {
 
     const [selected, setSelected] = React.useState(false);
     const [selectedBright, setSelectedBright] = React.useState(false);
+    const [selectedMute, setSelectedMute] = React.useState(false);
 
   return (
     <div className='parent'>
 
-        <div className='toggleButtonDark'>
+        <div className='toggleButton'>
             <ToggleButton
                 value="check"
                 selected={selected}
@@ -25,7 +27,7 @@ function Settings() {
             </ToggleButton>
         </div>
 
-        <div className='toggleButtonLight'>
+        <div className='toggleButton'>
             <ToggleButton
             value="check"
             selected={selectedBright}
@@ -35,6 +37,19 @@ function Settings() {
             >
                 <BsFillBrightnessHighFill />
                 <h5>Light Mode</h5>
+            </ToggleButton>
+        </div>
+
+        <div className='toggleButton'>
+            <ToggleButton
+            value="check"
+            selected={selectedMute}
+            onChange={() => {
+            setSelectedMute(!selectedMute);
+            }}
+            >
+                <BsFillVolumeMuteFill />
+                <h5>Mute Tab</h5>
             </ToggleButton>
         </div>
     </div>

@@ -4,6 +4,7 @@ import { ReactComponent as AllPlanLogo } from "./img/allplan-logo.svg"
 import { Link } from "react-router-dom";
 import {NotificationsNone, Settings, Search} from '@material-ui/icons';
 import SettingsButton from '../settingsButton/SettingsButton';
+import NotificationButton from '../notificationButton/NotificationButton';
 
 export default function Topbar() {
     return (
@@ -41,16 +42,17 @@ export default function Topbar() {
                     </div>
                     */}
 
+                    {/* 
                     <div className="topbarIconContainer">
                         <Search fontSize="large"/>
                     </div>
+                    */}
                     <div className="topbarIconContainer">
                         {/* <Settings fontSize="large"/> */}
                         <SettingsButton />
                     </div>
                     <div className="topbarIconContainer">
-                        <NotificationsNone fontSize="large"/>
-                        <span className="topIconBadge">2</span>
+                        <NotificationButton />
                     </div>
 
                     <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/f3de20aa-2186-43ca-97ea-f54394c3da13.png" alt=" Allplan 'A' logo" className="topAvatar" />
