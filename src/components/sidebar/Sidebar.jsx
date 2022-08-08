@@ -121,13 +121,13 @@ export default function Sidebar() {
                     </ul>
                 </div>
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Customise</h3>
+                    <h3 className="sidebarTitle">Options</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem ">
                             <IconContext.Provider value={{size: 30}}>
                                 <MdImageAspectRatio className="sidebarIcon" />
                             </IconContext.Provider>
-                            NavItem
+                            Settings
                         </li>
                         <Link to="/login">
                             <li className="sidebarListItem">

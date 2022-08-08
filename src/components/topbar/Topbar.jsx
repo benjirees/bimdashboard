@@ -2,6 +2,7 @@ import React from 'react'
 import "./topbar.css"
 import { ReactComponent as AllPlanLogo } from "./img/allplan-logo.svg"
 import {NotificationsNone, Settings, Search} from '@material-ui/icons';
+import SettingsButton from '../settingsButton/SettingsButton';
 
 export default function Topbar() {
     return (
@@ -41,7 +42,8 @@ export default function Topbar() {
                         <Search fontSize="large"/>
                     </div>
                     <div className="topbarIconContainer">
-                        <Settings fontSize="large"/>
+                        {/* <Settings fontSize="large"/> */}
+                        <SettingsButton />
                     </div>
                     <div className="topbarIconContainer">
                         <NotificationsNone fontSize="large"/>
