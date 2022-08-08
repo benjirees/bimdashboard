@@ -15,14 +15,19 @@ input, button {
 .App {
     height: 100vh;
     display: flex;
+    position: relative;
+    left: 718px;
+    bottom: 50px;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: white;
 }
 
 form {
-    display: block;
+    display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 form:after {
@@ -34,7 +39,7 @@ form:after {
     right: -5px;
     bottom: -5px;
     z-index: 1;
-    background-image: linear-gradient(to bottom right, gray, darkgray);
+    
 }
 
 form .form-inner {
@@ -43,6 +48,8 @@ form .form-inner {
     background-color: #FFF;
     padding: 30px;
     z-index: 2;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
 }
 
 form .form-inner h2 {

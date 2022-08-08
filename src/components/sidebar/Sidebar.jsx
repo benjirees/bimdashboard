@@ -137,12 +137,14 @@ export default function Sidebar() {
                                 Login
                             </li>
                         </Link>
-                        <li className="sidebarListItem">
-                            <IconContext.Provider value={{size: 30}}>
-                                <MdImportantDevices className="sidebarIcon" />
-                            </IconContext.Provider>
-                            Register
-                        </li>
+                        <Link to="/register">
+                            <li className="sidebarListItem">
+                                <IconContext.Provider value={{size: 30}}>
+                                    <MdImportantDevices className="sidebarIcon" />
+                                </IconContext.Provider>
+                                Register
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>

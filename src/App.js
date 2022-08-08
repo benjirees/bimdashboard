@@ -15,6 +15,7 @@ import AfterAi from './pages/home/afterAi/AfterAi';
 import { useState } from 'react'
 import SidebarButton from './components/sidebarButton/SidebarButton';
 import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -46,7 +47,8 @@ function App() {
         <div className="sideButton">
           <SidebarButton />
         </div>
-
+        
+        
         <Switch>
           <Route exact path="/">
             <Home />
@@ -68,6 +70,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
         </Switch>
       </div>
