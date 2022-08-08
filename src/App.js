@@ -14,6 +14,7 @@ import AfterAi from './pages/home/afterAi/AfterAi';
 // import { Drawer, Box, Typography, IconButton } from '@mui/material'
 import { useState } from 'react'
 import SidebarButton from './components/sidebarButton/SidebarButton';
+import Login from './pages/Login/Login';
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -64,6 +65,9 @@ function App() {
           </Route>
           <Route path="/bimdashboard/afterai">
             <AfterAi />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </div>
