@@ -1,14 +1,14 @@
 {
-  "main.css": "/bimdashboard/static/css/main.2b0d5705.chunk.css",
-  "main.js": "/bimdashboard/static/js/main.07f4b5ad.chunk.js",
-  "main.js.map": "/bimdashboard/static/js/main.07f4b5ad.chunk.js.map",
-  "static/js/1.b784a378.chunk.js": "/bimdashboard/static/js/1.b784a378.chunk.js",
-  "static/js/1.b784a378.chunk.js.map": "/bimdashboard/static/js/1.b784a378.chunk.js.map",
+  "main.css": "/bimdashboard/static/css/main.7a38a0f7.chunk.css",
+  "main.js": "/bimdashboard/static/js/main.7de4eab5.chunk.js",
+  "main.js.map": "/bimdashboard/static/js/main.7de4eab5.chunk.js.map",
+  "static/js/1.710d985c.chunk.js": "/bimdashboard/static/js/1.710d985c.chunk.js",
+  "static/js/1.710d985c.chunk.js.map": "/bimdashboard/static/js/1.710d985c.chunk.js.map",
   "runtime~main.js": "/bimdashboard/static/js/runtime~main.25ee3e93.js",
   "runtime~main.js.map": "/bimdashboard/static/js/runtime~main.25ee3e93.js.map",
   "static/media/allplan-logo.1f64ac27.svg": "/bimdashboard/static/media/allplan-logo.1f64ac27.svg",
-  "static/css/main.2b0d5705.chunk.css.map": "/bimdashboard/static/css/main.2b0d5705.chunk.css.map",
+  "static/css/main.7a38a0f7.chunk.css.map": "/bimdashboard/static/css/main.7a38a0f7.chunk.css.map",
   "index.html": "/bimdashboard/index.html",
-  "precache-manifest.ce2f9f09892222d348458364c5431eef.js": "/bimdashboard/precache-manifest.ce2f9f09892222d348458364c5431eef.js",
+  "precache-manifest.036c8f912311de37d0aac672036c406f.js": "/bimdashboard/precache-manifest.036c8f912311de37d0aac672036c406f.js",
   "service-worker.js": "/bimdashboard/service-worker.js"
 }
