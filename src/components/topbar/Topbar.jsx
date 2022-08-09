@@ -5,12 +5,16 @@ import { Link } from "react-router-dom";
 import {NotificationsNone, Settings, Search} from '@material-ui/icons';
 import SettingsButton from '../settingsButton/SettingsButton';
 import NotificationButton from '../notificationButton/NotificationButton';
+import SidebarButton from '../sidebarButton/SidebarButton';
 
 export default function Topbar() {
     return (
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
+                    <div className='sidebarButton'>
+                        <SidebarButton />
+                    </div>
                     <div className="logo">
                         <Link to="/bimdashboard">
                             <AllPlanLogo />

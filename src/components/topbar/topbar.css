@@ -9,7 +9,7 @@
 }
 
 .middle h2 {
-    color: lightgray;
+    color: #d3d3d3;
 }
 
 .middle h2:hover {
@@ -34,6 +34,11 @@
 .topLeft {
     margin-top: 20px;
     
+}
+
+.sidebarButton {
+    position: absolute;
+    left: 11px;
 }
 
 .topRight {

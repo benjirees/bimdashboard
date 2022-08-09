@@ -44,9 +44,9 @@ function App() {
           </Box>
         </Drawer>
         */}
-        <div className="sideButton">
+        {/* <div className="sideButton">
           <SidebarButton />
-        </div>
+        </div> */}
         
         
         <Switch>
