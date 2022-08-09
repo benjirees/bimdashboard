@@ -1,0 +1,14 @@
+.notification {
+    padding: 25px 25px;
+    position: relative;
+}
+
+.notification img {
+    width: 25px;
+    height: 25px;
+}
+
+.notification img:hover {
+    width: 40px;
+    height: 40px;
+}

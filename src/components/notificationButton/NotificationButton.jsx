@@ -1,9 +1,11 @@
 import React from 'react'
 import { Drawer, Box, Typography, IconButton } from '@mui/material'
+import Collapsible from 'react-collapsible'
 import { useState } from 'react'
 import { MdOutlineNotificationsNone } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import Settings from '../../pages/Settings/Settings'
+import Notifications from '../../pages/Notifications/Notifications'
 
 function NotificationButton() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -15,9 +17,10 @@ function NotificationButton() {
                 <MdOutlineNotificationsNone style={{ color: 'black'}} className='outline'/>
             </IconContext.Provider>
         </IconButton>
-            <Drawer anchor='top' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+
+            <Drawer anchor='right' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
                 <Box p={1} width='250px' textAlign='center' role='presentation'>
-                    <h1>WIP: Will try to make this a notification panel!</h1>
+                    <Notifications />
                 </Box>
             </Drawer>
         </>
