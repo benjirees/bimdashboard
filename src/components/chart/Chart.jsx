@@ -1,6 +1,7 @@
 import React from 'react'
 import "./chart.css"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { PieChart } from 'react-minimal-pie-chart';
 
 
 export default function Chart() {

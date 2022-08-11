@@ -135,16 +135,7 @@ export default function BeforeAi() {
     <div className="beforeAi">
 
       <h1>More in depth data would go here</h1>
-
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={14}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-
-      <MainChartOne data={beforeAiData} title="Before Ai" grid dataKey="pv" />
+          
     </div>
   )
 }

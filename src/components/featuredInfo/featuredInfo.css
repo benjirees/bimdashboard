@@ -16,7 +16,7 @@
 }
 
 .featuredTitle {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .featuredGraphContainer {
@@ -43,4 +43,10 @@
 .featuredSub {
     font-size: 15px;
     color: gray;
+}
+
+.piechart {
+    position: relative;
+    bottom: 75px;
+    left: 125px;
 }

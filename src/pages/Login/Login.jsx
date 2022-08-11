@@ -19,7 +19,12 @@ function Login() {
                 <label htmlFor="password">Password: </label>
                 <input type="password" name="password" id="password" />
             </div>
-            <input type="submit" value="LOGIN" />
+
+            <div className='buttons'>
+                <input type="submit" value="LOGIN" />
+                <input type="submit" value="REGISTER" />
+            </div>
+            
         </div>
     </form>
   )

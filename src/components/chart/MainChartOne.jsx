@@ -9,7 +9,7 @@ export default function MainChartOne({title, data, dataKey, grid}) {
 
     return (
         <div className="chart">
-            <h2>Before AI</h2> 
+            <h2>Materials Used</h2> 
             <ResponsiveContainer width="100%" aspect={4 / 1}>
                 <LineChart data={data}>
                     <XAxis dataKey="name" stroke="gray"/>

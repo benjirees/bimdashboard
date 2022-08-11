@@ -9,7 +9,7 @@ export default function FeaturedInfo() {
     return (
         <div className="featured">
             <div className="featuredItem">
-                <span className="featuredTitle">Before AI</span>
+                <span className="featuredTitle">Quantity of Materials Used</span>
                 <Chart />
                 <div className="featuredGraphContainer">
                         <span className="featuredGraph"><Chart /></span>
@@ -18,7 +18,7 @@ export default function FeaturedInfo() {
                 <span className="featuredSub">Compared to last iteration</span>
             </div>
             <div className="featuredItem">
-                <span className="featuredTitle">After AI</span>
+                <span className="featuredTitle">Conformance Compared to Requirements</span>
                 <ChartTwo />
                 <div className="featuredGraphContainer">
                     <span className="featuredGraph"><ChartTwo /></span>
@@ -28,7 +28,11 @@ export default function FeaturedInfo() {
             </div>
             <div className="featuredItem">
                 <span className="featuredTitle">Issues</span>
-                <PieChart />
+
+                <div className='piechart'>
+                    <PieChart />
+                </div>
+
                 <div className="featuredGraphContainer">
                     <span className="featuredGraph"></span>
 
