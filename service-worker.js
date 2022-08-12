@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/bimdashboard/precache-manifest.c8b415d5a8735bec156fdddb0f5b4afb.js"
+  "/bimdashboard/precache-manifest.07bd724bbb86747020cac4cef889780d.js"
 );
 
 workbox.clientsClaim();
