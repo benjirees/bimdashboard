@@ -48,7 +48,6 @@ function App() {
           <SidebarButton />
         </div> */}
         
-        
         <Switch>
           <Route exact path="/">
             <Home />
