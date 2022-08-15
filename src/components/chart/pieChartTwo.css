@@ -1,0 +1,54 @@
+.pieCharts {
+    position: inherit;
+}
+.pieChart1 {
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
+}
+.pieChart2 {
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
+}
+.pieChart3 {
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
+}
+.pieChart4 {
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
+}
+.pieChart5 {
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 21px -14px #000000; 
+    box-shadow: 5px 5px 21px -14px #000000;
+}
+
+.pieChart1:hover {
+    height: 450px;
+    width: 450px;
+}
+.pieChart2:hover {
+    height: 450px;
+    width: 450px;
+}
+.pieChart3:hover {
+    height: 450px;
+    width: 450px;
+}
+.pieChart4:hover {
+    height: 450px;
+    width: 450px;
+}
+.pieChart5:hover {
+    height: 450px;
+    width: 450px;
+}

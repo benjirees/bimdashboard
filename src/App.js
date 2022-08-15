@@ -47,7 +47,7 @@ function App() {
         {/* <div className="sideButton">
           <SidebarButton />
         </div> */}
-        
+
         <Switch>
           <Route exact path="/">
             <Home />

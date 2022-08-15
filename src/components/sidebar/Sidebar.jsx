@@ -38,7 +38,7 @@ export default function Sidebar() {
                                 <IconContext.Provider value={{size: 30}}>
                                     <FiArrowLeftCircle className="sidebarIcon" /> 
                                 </IconContext.Provider>
-                                Before AI
+                                Issues
                             </li>
                         </Link>
                         <Link to="/afterai">

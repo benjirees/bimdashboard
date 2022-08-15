@@ -1,23 +1,85 @@
 import React from 'react';
+import { VictoryPie } from 'victory-pie';
+import Chart from './Chart';
 import './pieChartTwo.css';
-import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-const data = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-    { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
+const myData = [
+    { x: "Group A", y: 900 },
+    { x: "Group B", y: 400 },
+    { x: "Group C", y: 300 },
+];
+
+const myData2 = [
+    { x: "Group A", y: 500 },
+    { x: "Group B", y: 700 },
+    { x: "Group C", y: 200 },
+];
+
+const myData3 = [
+    { x: "Group A", y: 100 },
+    { x: "Group B", y: 800 },
+    { x: "Group C", y: 300 },
+];
+
+const myData4 = [
+    { x: "Group A", y: 400 },
+    { x: "Group B", y: 600 },
+    { x: "Group C", y: 800 },
+];
+
+const myData5 = [
+    { x: "Group A", y: 200 },
+    { x: "Group B", y: 900 },
+    { x: "Group C", y: 800 },
 ];
 
 class PieChartTwo extends React.Component {
     render () {
         return (
-            <ResponsiveContainer width={225} height={175}>
-                <PieChart>
-                    <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={25} fill="#8884d8" />
-                    <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={30} outerRadius={40} fill="#82ca9d" label />
-                </PieChart>
-            </ResponsiveContainer>
+            <div>
+
+                <div className='pieCharts'>
+                    <div className='pieChart1'>
+                        <VictoryPie
+                            data={myData}
+                            colorScale={["lightblue", "gray", "orange"]}
+                            radius={75}
+                        />
+                    </div>
+                    
+                    <div className='pieChart2'>
+                        <VictoryPie
+                            data={myData2}
+                            colorScale={["lightblue", "gray", "orange"]}
+                            radius={75}
+                        />
+                    </div>
+                    
+                    <div className='pieChart3'>
+                        <VictoryPie
+                            data={myData3}
+                            colorScale={["lightblue", "gray", "orange"]}
+                            radius={75}
+                        />
+                    </div>
+                    
+                    <div className='pieChart4'>
+                        <VictoryPie
+                            data={myData4}
+                            colorScale={["lightblue", "gray", "orange"]}
+                            radius={75}
+                        />
+                    </div>
+
+                    <div className='pieChart5'>
+                        <VictoryPie
+                            data={myData5}
+                            colorScale={["lightblue", "gray", "orange"]}
+                            radius={75}
+                        />
+                    </div>
+                </div>
+            </div>
         )
     }
 }
