@@ -5,6 +5,7 @@ import ChartTwo from './ChartTwo';
 import PieChart from './PieChart'
 import './fourCharts.css';
 import MainChartOne from './MainChartOne';
+import PieChartThree from './PieChartThree';
 
 function FourCharts() {
   return (
@@ -30,8 +31,8 @@ function FourCharts() {
             <div className="featuredItem">
                 <span className="featuredTitle">Issues</span>
 
-                <div className='piechart'>
-                    <PieChart />
+                <div className='piecharting'>
+                    <PieChartThree />
                 </div>
 
                 <div className="featuredGraphContainer">
