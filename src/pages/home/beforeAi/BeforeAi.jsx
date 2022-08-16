@@ -14,7 +14,9 @@ export default function BeforeAi() {
         <div className="pieCharts">
           <PieChartTwo />   
         </div>
-        <FourCharts />
+        <div className='fourCh'>
+          <FourCharts />
+        </div>
       </div>
   )
 }
