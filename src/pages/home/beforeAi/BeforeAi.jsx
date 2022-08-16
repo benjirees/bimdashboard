@@ -1,5 +1,6 @@
 import React from 'react'
 import Chart from '../../../components/chart/Chart'
+import FourCharts from '../../../components/chart/FourCharts'
 import PieChartTwo from '../../../components/chart/PieChartTwo'
 import './beforeAi.css'
 
@@ -13,6 +14,7 @@ export default function BeforeAi() {
         <div className="pieCharts">
           <PieChartTwo />   
         </div>
+        <FourCharts />
       </div>
   )
 }
