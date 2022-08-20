@@ -48,8 +48,8 @@ function App() {
           <SidebarButton />
         </div> */}
 
-        <BeforeAi />
-        {/* <Switch>
+        {/* <BeforeAi /> */}
+        <Switch>
           <Route exact path="/">
             <Home />
           </Route>
@@ -74,7 +74,7 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
-        </Switch> */}
+        </Switch>
       </div>
     </Router>
   );
