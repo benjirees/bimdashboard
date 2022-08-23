@@ -1,23 +1,35 @@
-import React from 'react';
-import './pieChartThree.css';
-import { VictoryPie } from 'victory-pie';
+import React, { PureComponent } from 'react'
+import "./pieChart.css"
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
-const myData = [
-    { x: "Group A", y: 900 },
-    { x: "Group B", y: 400 },
-    { x: "Group C", y: 300 },
+const data = [
+    { name: 'Group A', value: 400 },
+    { name: 'Group B', value: 300 },
+    { name: 'Group C', value: 300 },
+    { name: 'Group D', value: 200 },
 ];
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
-function PieChartThree() {
-  return (
-    <div className='victory-pie'>
-        <VictoryPie
-            data={myData}
-            colorScale={["lightblue", "gray", "orange"]}
-            radius={50}
-        />
-    </div>
-  )
+export default class PieChartThree extends PureComponent {
+  
+    render() {
+      return (
+        <PieChart width={400} height={200} onMouseEnter={this.onPieEnter}>
+          <Pie
+            data={data}
+            cx={120}
+            cy={200}
+            innerRadius={60}
+            outerRadius={80}
+            fill="#8884d8"
+            paddingAngle={5}
+            dataKey="value"
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
+        </PieChart>
+      );
+    }
 }
-
-export default PieChartThree

@@ -3,5 +3,7 @@
 }
 
 .piecharting {
-    
+    position: relative;
+    left: 120px;
+    bottom: 70px;
 }
